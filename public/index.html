@@ -1,0 +1,634 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <title>ใบสั่งเจ้าพนักงานจราจรหรือพนักงานเจ้าหน้าที่</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/checkout/">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="form-validation.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+    <div class="container">
+        <div class="py-5 text-center">
+            <i class="fas fa-10x fa-car"></i>
+            <h2>ใบสั่งเจ้าพนักงานจราจรหรือพนักงานเจ้าหน้าที่</h2>
+        </div>
+
+        <div class="container">
+            <form class="nb-3">
+                <div class="col-md-5 mb-3">
+                    <label for="number">
+                        <h3>เลขที่ใบสั่ง</h3>
+                    </label>
+                    <input type="text" class="form-control" id="number" placeholder="Traffic Ticket No." required>
+                </div>
+                <div class="col-md-5 mb-3">
+                    <label for="number">
+                        <h6>เล่มที่</h6>
+                    </label>
+                    <input type="text" class="form-control" id="number" placeholder="Book No." required>
+                </div>
+                <div class="col-md-5 mb-3">
+                    <label for="number">
+                        <h6>เลขที่</h6>
+                    </label>
+                    <input type="text" class="form-control" id="number" placeholder="No." required>
+                </div>
+                <br><br>
+
+
+                <label for="user">
+                    <h5>ด้วยผู้ขับขี่</h5>
+                </label>
+                Driver of:
+                <div class="row nb-3">
+                    <div class="col-md-3"><input type="radio" name="drive" id="drive"
+                            required />รถจักรยานยนต์(Motorcycle)</div>
+                    <div class="col-md-3"><input type="radio" name="drive" id="drive"
+                            required />รถยนต์นั่งส่วนบุคคล(Private Car)</div>
+                    <div class="col-md-3"><input type="radio" name="drive" id="drive" required />รถประเภทอื่น(Other
+                        Vehicle)</div>
+                    <div class="col-md-3"><input type="radio" name="drive" id="drive" required />รถขนส่ง(Truck)</div>
+                </div>
+                <br><br>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="Marque">ยี่ห้อ</label>
+                        <select name="Marque" id="Marque" class="form-control" required>
+                            <option value="Marque">Marque</option>
+                            <option value="Toyota">Toyota</option>
+                            <option value="Isuzu">Isuzu</option>
+                            <option value="Honda">Honda</option>
+                            <option value="Mitsubishi">Mitsubishi</option>
+                            <option value="Ford">Ford</option>
+                            <option value="Nissan">Nissan</option>
+                            <option value="Mazda">Mazda</option>
+                            <option value="Suzuki">Suzuki</option>
+                            <option value="MG">MG</option>
+                            <option value="Chevrolet">Chevrolet</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="province">จังหวัด</label>
+                        <select name="province" id="province" class="form-control" required>
+                            <option value="province">Province</option>
+                            <option value="Krabi">จังหวัดกระบี่</option>
+                            <option value="Kanchanaburi">จังหวัดกาญจนบุรี</option>
+                            <option value="Kalasin">จังหวัดกาฬสินธุ์</option>
+                            <option value="Kamphaeng Phet">จังหวัดกำแพงเพชร</option>
+                            <option value="Khon Kaen">จังหวัดขอนแก่น</option>
+                            <option value="Chanthaburi ">จังหวัดจันทบุรี</option>
+                            <option value="Chachoengsao">จังหวัดฉะเชิงเทรา</option>
+                            <option value="Chonburi">จังหวัดชลบุรี</option>
+                            <option value="Chainat">จังหวัดชัยนาท</option>
+                            <option value="Chaiyaphum">จังหวัดชัยภูมิ</option>
+                            <option value="Chumphon ">จังหวัดชุมพร</option>
+                            <option value="Chiang Rai ">จังหวัดเชียงราย</option>
+                            <option value="Chiang Mai ">จังหวัดเชียงใหม่</option>
+                            <option value="Trang">จังหวัดตรัง</option>
+                            <option value="Trat">จังหวัดตราด</option>
+                            <option value="Tak ">จังหวัดตาก</option>
+                            <option value="Nakhon Nayok">จังหวัดนครนายก</option>
+                            <option value="Nakhon Pathom">จังหวัดนครปฐม</option>
+                            <option value="Nakhon Phanom">จังหวัดนครพนม</option>
+                            <option value="Nakhon Ratchasima">จังหวัดนครราชสีมา</option>
+                            <option value="Nakhon Si Thammarat">จังหวัดนครศรีธรรมราช</option>
+                            <option value="Nakhon Sawan">จังหวัดนครสวรรค์</option>
+                            <option value="Nonthaburi ">จังหวัดนนทบุรี</option>
+                            <option value="Narathiwat">จังหวัดนราธิวาส</option>
+                            <option value="Nan">จังหวัดน่าน</option>
+                            <option value="Bueng Kan">จังหวัดบึงกาฬ</option>
+                            <option value="Buriram">จังหวัดบุรีรัมย์</option>
+                            <option value="Pathum Thani">จังหวัดปทุมธานี</option>
+                            <option value="Prachuap Khiri Khan">จังหวัดประจวบคีรีขันธ์</option>
+                            <option value="Prachinburi">จังหวัดปราจีนบุรี</option>
+                            <option value="Pattani">จังหวัดปัตตานี</option>
+                            <option value="Phra Nakhon Si Ayutthaya">จังหวัดพระนครศรีอยุธยา</option>
+                            <option value="Phayao">จังหวัดพะเยา</option>
+                            <option value="Phang Nga">จังหวัดพังงา</option>
+                            <option value="Phatthalung">จังหวัดพัทลุง</option>
+                            <option value="Phichit">จังหวัดพิจิตร</option>
+                            <option value="Phitsanulok">จังหวัดพิษณุโลก</option>
+                            <option value="Phetchaburi">จังหวัดเพชรบุรี</option>
+                            <option value="Phetchabun">จังหวัดเพชรบูรณ์</option>
+                            <option value="Phrae">จังหวัดแพร่</option>
+                            <option value="Phuket">จังหวัดภูเก็ต</option>
+                            <option value="Maha Sarakham">จังหวัดมหาสารคาม</option>
+                            <option value="Mukdahan">จังหวัดมุกดาหาร</option>
+                            <option value="Mae Hong Son">จังหวัดแม่ฮ่องสอน</option>
+                            <option value="Yasothon">จังหวัดยโสธร</option>
+                            <option value="Yala">จังหวัดยะลา</option>
+                            <option value="Roi Et ">จังหวัดร้อยเอ็ด</option>
+                            <option value="Ranong">จังหวัดระนอง</option>
+                            <option value="Rayong ">จังหวัดระยอง</option>
+                            <option value="Ratchaburi">จังหวัดราชบุรี</option>
+                            <option value="Lopburi">จังหวัดลพบุรี</option>
+                            <option value="Lampang">จังหวัดลำปาง</option>
+                            <option value="Lamphun">จังหวัดลำพูน</option>
+                            <option value="Loei ">จังหวัดเลย</option>
+                            <option value="Sisaket">จังหวัดศรีสะเกษ</option>
+                            <option value="Sakon Nakhon">จังหวัดสกลนคร</option>
+                            <option value="Songkhla">จังหวัดสงขลา</option>
+                            <option value="Satun">จังหวัดสตูล</option>
+                            <option value="Samut Prakan">จังหวัดสมุทรปราการ</option>
+                            <option value="Samut Songkhram">จังหวัดสมุทรสงคราม</option>
+                            <option value="Samut Sakhon">จังหวัดสมุทรสาคร</option>
+                            <option value="Sa Kaeo">จังหวัดสระแก้ว</option>
+                            <option value="Saraburi ">จังหวัดสระบุรี</option>
+                            <option value="Sing Buri ">จังหวัดสิงห์บุรี</option>
+                            <option value="Sukhothai">จังหวัดสุโขทัย</option>
+                            <option value="Suphan Buri ">จังหวัดสุพรรณบุรี</option>
+                            <option value="Surat Thani">จังหวัดสุราษฎร์ธานี</option>
+                            <option value="Surin">จังหวัดสุรินทร์</option>
+                            <option value="Nong Khai">จังหวัดหนองคาย</option>
+                            <option value="Nong Bua Lamphu">จังหวัดหนองบัวลำภู</option>
+                            <option value="Ang Thong">จังหวัดอ่างทอง</option>
+                            <option value="Amnat Charoen">จังหวัดอำนาจเจริญ</option>
+                            <option value="Udon Thani">จังหวัดอุดรธานี</option>
+                            <option value="Uttaradit ">จังหวัดอุตรดิตถ์</option>
+                            <option value="Uthai Thani">จังหวัดอุทัยธานี</option>
+                            <option value="Ubon Ratchathani">จังหวัดอุบลราชธานี</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-5 mb-3">
+                        <label for="number">ทะเบียนรถ</label>
+                        <input type="text" class="form-control" id="number" placeholder="License plate no" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="color">สีรถ<span class="text-muted">(color)</span></label>
+                        <br>
+                        <input type="color" class="from-control" id="color" required>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="colore">สีป้ายทะเบียนรถ<span class="text-muted">(color)</span></label>
+                        <br>
+                        <input type="color" class="from-control" id="colore" required>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="mb-3">
+                    <label for="address">
+                        <h4>กระทำผิดฐาน</h4> <span class="text-muted">
+                            Committing the following offenses:</span>
+                    </label><br>
+                    <div>
+                        <h5>๑.ขับรถ</h5>
+                    </div>Driving<br>
+                    <div class="row nb-2">
+                        <div class="col-md-3"><input type="checkbox" name="1" id="1" />ฝ่าฝืนจราจรไฟแดง</div>
+                        <div class="col-md-3"><input type="checkbox" name="2" id="2" />ฝ่าฝืนเครื่องหมายบนพื้นทาง</div>
+                        <div class="col-md-3"><input type="checkbox" name="3" id="3" />ฝ่าฝืนเครื่องหมายจราจรห้าม</div>
+                        <div class="col-md-3"><input type="checkbox" name="4" id="4" />ในลักษณะกีดขวางการจราจร</div>
+                        <div class="col-md-3"><input type="checkbox" name="5" id="5" />ไม่ใกล้ขอบทางเดินรถด้านซ้าย</div>
+                        <div class="col-md-3"><input type="checkbox" name="6" id="6" />แซงเมื่อเข้าที่คับขัน</div>
+                    </div>
+                    <br><br>
+                    <div>
+                        <h5>๒.หยุดรถ </h5>Stop
+                    </div>
+                    <div class="row nb-2">
+                        <div class="col-md-3"><input type="checkbox" name="1" id="1" />ในลักษณะกีดขวางการจราจร</div>
+                        <div class="col-md-3"><input type="checkbox" name="2" id="2" />ในเขตห้ามหยุด</div>
+                        <div class="col-md-3"><input type="checkbox" name="3" id="3" />รอสัญญาณล้ำแนว</div>
+                    </div>
+                    <br><br>
+                    <div>
+                        <h5>๓.จอดรถไว้ </h5>Parking
+                    </div>
+                    <div class="row nb-2">
+                        <div class="col-md-3"><input type="checkbox" name="1" id="1" />ในลักษณะกีดขวางการจราจร</div>
+                        <div class="col-md-3"><input type="checkbox" name="2" id="2" />บนทางเท้า</div>
+                        <div class="col-md-3"><input type="checkbox" name="3" id="3" />ในเขตห้ามจอด</div>
+                        <div class="col-md-3"><input type="checkbox" name="4" id="4" />ไม่ชิดขอบทางด้านซ้าย</div>
+                        <div class="col-md-3"><input type="checkbox" name="5" id="5" />ไม่ขนานชิดขอบทาง</div>
+                        <div class="col-md-3"><input type="checkbox" name="6" id="6" />ซ้อนคัน</div>
+                    </div>
+                    <br><br>
+                    <div class="mb-3">
+                        <label for="committing">
+                            <h5>๔.อื่นๆ</h5>
+                        </label>
+                        <input type="text" class="form-control" id="address2" placeholder="Other">
+                    </div>
+                </div>
+                <br>
+                <hr><br><br>
+                <div class="row">
+                    <div class="col-md-4 md3">
+                        <label for="kk">
+                            <h5>เหตุเกิดที่</h5>
+                        </label>
+                        <label for="Alley">ตรอก/ซอย</label>
+                        <input type="text" class="form-control" id="Alley" placeholder="Place of incident/Alley">
+                    </div>
+                    <div class="col-md-4 md3">
+                        <label for="Road">
+                            <h5>ถนน</h5>
+                        </label>
+                        <input type="text" class="form-control" id="Road" placeholder="Road">
+                    </div>
+                    <div class="col-md-4 md3">
+                        <label for="District">
+                            <h5>ตำบล/เเขวง</h5>
+                        </label>
+                        <input type="text" class="form-control" id="District" placeholder="Sub-District">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="district">
+                            <h5>อำเภอ/เขต</h5>
+                        </label>
+                        <input type="text" class="form-control" id="district" placeholder="District">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="province">
+                            <h5>จังหวัด</h5>
+                        </label>
+                        <select name="province1" id="province1" class="form-control">
+                            <option value="province">Province</option>
+                            <option value="Krabi">จังหวัดกระบี่</option>
+                            <option value="Kanchanaburi">จังหวัดกาญจนบุรี</option>
+                            <option value="Kalasin">จังหวัดกาฬสินธุ์</option>
+                            <option value="Kamphaeng Phet">จังหวัดกำแพงเพชร</option>
+                            <option value="Khon Kaen">จังหวัดขอนแก่น</option>
+                            <option value="Chanthaburi ">จังหวัดจันทบุรี</option>
+                            <option value="Chachoengsao">จังหวัดฉะเชิงเทรา</option>
+                            <option value="Chonburi">จังหวัดชลบุรี</option>
+                            <option value="Chainat">จังหวัดชัยนาท</option>
+                            <option value="Chaiyaphum">จังหวัดชัยภูมิ</option>
+                            <option value="Chumphon ">จังหวัดชุมพร</option>
+                            <option value="Chiang Rai ">จังหวัดเชียงราย</option>
+                            <option value="Chiang Mai ">จังหวัดเชียงใหม่</option>
+                            <option value="Trang">จังหวัดตรัง</option>
+                            <option value="Trat">จังหวัดตราด</option>
+                            <option value="Tak ">จังหวัดตาก</option>
+                            <option value="Nakhon Nayok">จังหวัดนครนายก</option>
+                            <option value="Nakhon Pathom">จังหวัดนครปฐม</option>
+                            <option value="Nakhon Phanom">จังหวัดนครพนม</option>
+                            <option value="Nakhon Ratchasima">จังหวัดนครราชสีมา</option>
+                            <option value="Nakhon Si Thammarat">จังหวัดนครศรีธรรมราช</option>
+                            <option value="Nakhon Sawan">จังหวัดนครสวรรค์</option>
+                            <option value="Nonthaburi ">จังหวัดนนทบุรี</option>
+                            <option value="Narathiwat">จังหวัดนราธิวาส</option>
+                            <option value="Nan">จังหวัดน่าน</option>
+                            <option value="Bueng Kan">จังหวัดบึงกาฬ</option>
+                            <option value="Buriram">จังหวัดบุรีรัมย์</option>
+                            <option value="Pathum Thani">จังหวัดปทุมธานี</option>
+                            <option value="Prachuap Khiri Khan">จังหวัดประจวบคีรีขันธ์</option>
+                            <option value="Prachinburi">จังหวัดปราจีนบุรี</option>
+                            <option value="Pattani">จังหวัดปัตตานี</option>
+                            <option value="Phra Nakhon Si Ayutthaya">จังหวัดพระนครศรีอยุธยา</option>
+                            <option value="Phayao">จังหวัดพะเยา</option>
+                            <option value="Phang Nga">จังหวัดพังงา</option>
+                            <option value="Phatthalung">จังหวัดพัทลุง</option>
+                            <option value="Phichit">จังหวัดพิจิตร</option>
+                            <option value="Phitsanulok">จังหวัดพิษณุโลก</option>
+                            <option value="Phetchaburi">จังหวัดเพชรบุรี</option>
+                            <option value="Phetchabun">จังหวัดเพชรบูรณ์</option>
+                            <option value="Phrae">จังหวัดแพร่</option>
+                            <option value="Phuket">จังหวัดภูเก็ต</option>
+                            <option value="Maha Sarakham">จังหวัดมหาสารคาม</option>
+                            <option value="Mukdahan">จังหวัดมุกดาหาร</option>
+                            <option value="Mae Hong Son">จังหวัดแม่ฮ่องสอน</option>
+                            <option value="Yasothon">จังหวัดยโสธร</option>
+                            <option value="Yala">จังหวัดยะลา</option>
+                            <option value="Roi Et ">จังหวัดร้อยเอ็ด</option>
+                            <option value="Ranong">จังหวัดระนอง</option>
+                            <option value="Rayong ">จังหวัดระยอง</option>
+                            <option value="Ratchaburi">จังหวัดราชบุรี</option>
+                            <option value="Lopburi">จังหวัดลพบุรี</option>
+                            <option value="Lampang">จังหวัดลำปาง</option>
+                            <option value="Lamphun">จังหวัดลำพูน</option>
+                            <option value="Loei ">จังหวัดเลย</option>
+                            <option value="Sisaket">จังหวัดศรีสะเกษ</option>
+                            <option value="Sakon Nakhon">จังหวัดสกลนคร</option>
+                            <option value="Songkhla">จังหวัดสงขลา</option>
+                            <option value="Satun">จังหวัดสตูล</option>
+                            <option value="Samut Prakan">จังหวัดสมุทรปราการ</option>
+                            <option value="Samut Songkhram">จังหวัดสมุทรสงคราม</option>
+                            <option value="Samut Sakhon">จังหวัดสมุทรสาคร</option>
+                            <option value="Sa Kaeo">จังหวัดสระแก้ว</option>
+                            <option value="Saraburi ">จังหวัดสระบุรี</option>
+                            <option value="Sing Buri ">จังหวัดสิงห์บุรี</option>
+                            <option value="Sukhothai">จังหวัดสุโขทัย</option>
+                            <option value="Suphan Buri ">จังหวัดสุพรรณบุรี</option>
+                            <option value="Surat Thani">จังหวัดสุราษฎร์ธานี</option>
+                            <option value="Surin">จังหวัดสุรินทร์</option>
+                            <option value="Nong Khai">จังหวัดหนองคาย</option>
+                            <option value="Nong Bua Lamphu">จังหวัดหนองบัวลำภู</option>
+                            <option value="Ang Thong">จังหวัดอ่างทอง</option>
+                            <option value="Amnat Charoen">จังหวัดอำนาจเจริญ</option>
+                            <option value="Udon Thani">จังหวัดอุดรธานี</option>
+                            <option value="Uttaradit ">จังหวัดอุตรดิตถ์</option>
+                            <option value="Uthai Thani">จังหวัดอุทัยธานี</option>
+                            <option value="Ubon Ratchathani">จังหวัดอุบลราชธานี</option>
+                        </select>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="Date">วันที่</label>
+                        <input type="date" id="Date" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="At">เวลา</label>
+                        <input type="time" id="At" required>
+                    </div>
+                </div>
+
+                <br>
+                <hr><br><br>
+                <div class="mb-3">
+                    อาศัยอำนาจตามความในมาตรา ๑๔๐ วรรคหนึ่ง แห่งพ.ร.บ.จราจรทางบก พ.ศ.๒๕๒๒ ซึ่งแก้ไขเพิ่มเติมโดย
+                    พ.ร.บ.จราจรทางบก(ฉบับที่๙)
+                    พ.ศ ๒๕๕๗ และมาตรา ๑๔๑ แห่ง พ.ร.บ.ทางบก พ.ศ.๒๕๒๒ ซึ่งแก้ไขเพิ่มเติมโดย พ.ร.บ.จราจรทางบก(ฉบับที่ ๑๑)
+                    พ.ศ.๒๕๙๙
+                    ให้ผู้ขับขี่หรือเจ้าของหรือผู้ครอบครองรถไปชำระค่าปรับตามข้อกำหนดสำนักงานตำรวจแห่งชาติ
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <label for="bath">จำนวนเงิน(ต่อพนักงานสอบสวน)</label>
+                        <input type="number" class="form-control" placeholder="Bath" required>
+                    </div>
+                    <div class="col-md-8 mb-3">
+                        <label for="police">ณ สถานีตำรวจ</label>
+                        <input type="text" class="form-control" placeholder="Police station" required>
+                    </div>
+                    <div class="col-md-8 mb-3">
+                        <label for="police">หรือ</label>
+                        <input type="text" class="form-control" placeholder="Other" required>
+                    </div>
+                </div>
+                หรือชำระด้วยวิธีอื่นใดตามที่ระบุไว้ด้านหลังใบคำสั่งนี้ภายในวัน ๗ วันนับตั้งแต่วันที่ได้รับใบสั่ง<br>
+                <div class="row nb-2">
+                    <div class="col-md-11"><input type="checkbox" name="post"
+                            id="post" />ส่งทางไปรษณีย์พร้อมพยานหลักฐานและให้เจ้าของหรือผู้ครอบครองรถไปชำระค่าปรับตามที่ระบุไว้ข้างต้องภายใน
+                        ๓๐ วันนับตั้งแต่วันที่ได้รับใบสั่ง
+                    </div>
+                </div>
+                <br>
+                <hr><br>
+                <label for="codename">
+                    <h4>ลงชื่อผู้ออกใบสั่ง</h4>
+                </label>
+                <div class="row">
+                    <div class="col-md-2 md-3">
+                        <label for="rank">
+                            <h5>ยศ</h5>
+                        </label>
+                        <input type="text" class="form-control" id="rank" placeholder="Rank" required>
+                    </div>
+                    <div class="col-md-3 md-3">
+                        <label for="Nname">
+                            <h5>ชื่อ</h5>
+                        </label>
+                        <input type="text" class="form-control" id="Nname" placeholder="Name" required>
+                    </div>
+                    <div class="col-md-3 md-3">
+                        <label for="Nlast">
+                            <h5>ชื่อสกุล</h5>
+                        </label>
+                        <input type="text" class="form-control" id="Nlast" placeholder="Last name" required>
+                    </div>
+                    <div class="col-md-2 md-3">
+                        <label for="code">
+                            <h5>รหัส</h5>
+                        </label>
+                        <input type="number" class="form-control" id="code" placeholder="Code" required>
+                    </div>
+                    <div class="d-block my-3">
+                        <div class="custom-control custom-radio">
+                            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" required>
+                            <label class="custom-control-label" for="credit">เจ้าพนักงานจราจร</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+                            <label class="custom-control-label" for="debit">พนักงานเจ้าหน้าที่</label>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="text-center">
+                    <h3>ใบรับเเทนใบอนุญาตขับขี่</h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="names">
+                            <h5>ชื่อผู้ขับขี่</h5>
+                        </label>
+                        <input type="text" class="form-control" id="names" placeholder="Driver's Name" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="NID">
+                            <h5>เลขประจำตัวประชาชน</h5>
+                        </label>
+                        <input type="number" class="form-control" id="NID" placeholder="ID.no" required>
+                    </div>
+                </div>
+                <br><br>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <label for="Bookno">
+                            <h5>ใบอนุญาตขับขี่เลขที่/ฉบับที่</h5>
+                        </label>
+                        <input type="number" id="Bookno" class="form-control" placeholder="Driver's License No./Book no"
+                            required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="ddate">
+                            <h5>วันอนุญาต</h5>
+                        </label>
+                        <input type="date" id="ddate" class="form-control" required>
+                    </div>
+                </div>
+                <br>
+                <label for="codename">
+                    <h4>ออกโดยนายทะเบียน</h4>
+                </label>
+                Issued by the Registrar of<br>
+                <div class="row">
+
+                    <div class="col-md-4 mb-3">
+                        <label for="Branch">
+                            <h5>สาขา</h5>
+                        </label>
+                        <input type="number" id="Branch" class="form-control" placeholder="Branch" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="province">
+                            <h5>จังหวัด</h5>
+                        </label>
+                        <select name="province" id="province" class="form-control" required>
+                            <option value="province">Province</option>
+                            <option value="Krabi">จังหวัดกระบี่</option>
+                            <option value="Kanchanaburi">จังหวัดกาญจนบุรี</option>
+                            <option value="Kalasin">จังหวัดกาฬสินธุ์</option>
+                            <option value="Kamphaeng Phet">จังหวัดกำแพงเพชร</option>
+                            <option value="Khon Kaen">จังหวัดขอนแก่น</option>
+                            <option value="Chanthaburi ">จังหวัดจันทบุรี</option>
+                            <option value="Chachoengsao">จังหวัดฉะเชิงเทรา</option>
+                            <option value="Chonburi">จังหวัดชลบุรี</option>
+                            <option value="Chainat">จังหวัดชัยนาท</option>
+                            <option value="Chaiyaphum">จังหวัดชัยภูมิ</option>
+                            <option value="Chumphon ">จังหวัดชุมพร</option>
+                            <option value="Chiang Rai ">จังหวัดเชียงราย</option>
+                            <option value="Chiang Mai ">จังหวัดเชียงใหม่</option>
+                            <option value="Trang">จังหวัดตรัง</option>
+                            <option value="Trat">จังหวัดตราด</option>
+                            <option value="Tak ">จังหวัดตาก</option>
+                            <option value="Nakhon Nayok">จังหวัดนครนายก</option>
+                            <option value="Nakhon Pathom">จังหวัดนครปฐม</option>
+                            <option value="Nakhon Phanom">จังหวัดนครพนม</option>
+                            <option value="Nakhon Ratchasima">จังหวัดนครราชสีมา</option>
+                            <option value="Nakhon Si Thammarat">จังหวัดนครศรีธรรมราช</option>
+                            <option value="Nakhon Sawan">จังหวัดนครสวรรค์</option>
+                            <option value="Nonthaburi ">จังหวัดนนทบุรี</option>
+                            <option value="Narathiwat">จังหวัดนราธิวาส</option>
+                            <option value="Nan">จังหวัดน่าน</option>
+                            <option value="Bueng Kan">จังหวัดบึงกาฬ</option>
+                            <option value="Buriram">จังหวัดบุรีรัมย์</option>
+                            <option value="Pathum Thani">จังหวัดปทุมธานี</option>
+                            <option value="Prachuap Khiri Khan">จังหวัดประจวบคีรีขันธ์</option>
+                            <option value="Prachinburi">จังหวัดปราจีนบุรี</option>
+                            <option value="Pattani">จังหวัดปัตตานี</option>
+                            <option value="Phra Nakhon Si Ayutthaya">จังหวัดพระนครศรีอยุธยา</option>
+                            <option value="Phayao">จังหวัดพะเยา</option>
+                            <option value="Phang Nga">จังหวัดพังงา</option>
+                            <option value="Phatthalung">จังหวัดพัทลุง</option>
+                            <option value="Phichit">จังหวัดพิจิตร</option>
+                            <option value="Phitsanulok">จังหวัดพิษณุโลก</option>
+                            <option value="Phetchaburi">จังหวัดเพชรบุรี</option>
+                            <option value="Phetchabun">จังหวัดเพชรบูรณ์</option>
+                            <option value="Phrae">จังหวัดแพร่</option>
+                            <option value="Phuket">จังหวัดภูเก็ต</option>
+                            <option value="Maha Sarakham">จังหวัดมหาสารคาม</option>
+                            <option value="Mukdahan">จังหวัดมุกดาหาร</option>
+                            <option value="Mae Hong Son">จังหวัดแม่ฮ่องสอน</option>
+                            <option value="Yasothon">จังหวัดยโสธร</option>
+                            <option value="Yala">จังหวัดยะลา</option>
+                            <option value="Roi Et ">จังหวัดร้อยเอ็ด</option>
+                            <option value="Ranong">จังหวัดระนอง</option>
+                            <option value="Rayong ">จังหวัดระยอง</option>
+                            <option value="Ratchaburi">จังหวัดราชบุรี</option>
+                            <option value="Lopburi">จังหวัดลพบุรี</option>
+                            <option value="Lampang">จังหวัดลำปาง</option>
+                            <option value="Lamphun">จังหวัดลำพูน</option>
+                            <option value="Loei ">จังหวัดเลย</option>
+                            <option value="Sisaket">จังหวัดศรีสะเกษ</option>
+                            <option value="Sakon Nakhon">จังหวัดสกลนคร</option>
+                            <option value="Songkhla">จังหวัดสงขลา</option>
+                            <option value="Satun">จังหวัดสตูล</option>
+                            <option value="Samut Prakan">จังหวัดสมุทรปราการ</option>
+                            <option value="Samut Songkhram">จังหวัดสมุทรสงคราม</option>
+                            <option value="Samut Sakhon">จังหวัดสมุทรสาคร</option>
+                            <option value="Sa Kaeo">จังหวัดสระแก้ว</option>
+                            <option value="Saraburi ">จังหวัดสระบุรี</option>
+                            <option value="Sing Buri ">จังหวัดสิงห์บุรี</option>
+                            <option value="Sukhothai">จังหวัดสุโขทัย</option>
+                            <option value="Suphan Buri ">จังหวัดสุพรรณบุรี</option>
+                            <option value="Surat Thani">จังหวัดสุราษฎร์ธานี</option>
+                            <option value="Surin">จังหวัดสุรินทร์</option>
+                            <option value="Nong Khai">จังหวัดหนองคาย</option>
+                            <option value="Nong Bua Lamphu">จังหวัดหนองบัวลำภู</option>
+                            <option value="Ang Thong">จังหวัดอ่างทอง</option>
+                            <option value="Amnat Charoen">จังหวัดอำนาจเจริญ</option>
+                            <option value="Udon Thani">จังหวัดอุดรธานี</option>
+                            <option value="Uttaradit ">จังหวัดอุตรดิตถ์</option>
+                            <option value="Uthai Thani">จังหวัดอุทัยธานี</option>
+                            <option value="Ubon Ratchathani">จังหวัดอุบลราชธานี</option>
+                        </select>
+                    </div>
+                </div>
+                <br><br>
+                <label for="user">
+                    <h5>ใบขับขี่</h5>
+                </label>
+                <div class="row nb-3">
+                    <div class="col-md-3"><input type="radio" name="drive" id="drive" required />รถจักรยานยนต์</div>
+                    <div class="col-md-3"><input type="radio" name="drive" id="drive" required />รถสามล้อ</div>
+                    <div class="col-md-3"><input type="radio" name="drive" id="drive" required />รถยนต์</div>
+                    <div class="col-md-3"><input type="radio" name="drive" id="drive" required />รถขนส่ง</div>
+                    <div class="col-md-3"><input type="radio" name="drive" id="drive" required />รถอื่นๆ</div>
+                </div>
+                <br><br>
+                <label for="user">
+                    <h5>ชนิด</h5>
+                </label>
+                <div class="row nb-3">
+                    <div class="col-md-2"><input type="radio" name="drive" id="drive" required />ชั่วคราว</div>
+                    <div class="col-md-2"><input type="radio" name="drive" id="drive" required />ตลอดชีพ</div>
+                    <div class="col-md-2"><input type="radio" name="drive" id="drive" required />สาธารณะ</div>
+                    <div class="col-md-2"><input type="radio" name="drive" id="drive" required />บุคคล ชนิดที่</div>
+                    <div class="col-md-2"><input type="radio" name="drive" id="drive" required />ทุกประเภท ชนิดที่</div>
+                    <div class="col-md-2"><input type="radio" name="drive" id="drive" required />ระหว่างประเทศ</div>
+                </div>
+                <br><br>
+                <div class="mb-3">
+                    ข้าพเจ้าผู้ออกใบสั่งฉบับนี้ได้เรียกเก็บใบอนุญาตขับขี่ไว้
+                    เเละให้ใช้เป็นใบเเทนใบอนุญาตขับขี่ได้เป็นการชั่วคราว ไม่เกิน ๗ วัน
+                    นับเเต่วันที่ออกใบรับเเทนใบอนุญาตขับขี่นี้
+                </div>
+
+                <br>
+                <hr><br>
+                <label for="codename">
+                    <h4>ลงชื่อผู้ออกใบสั่ง</h4>
+                </label>
+                <div class="row">
+                    <div class="col-md-2 md-3">
+                        <label for="ranks">ยศ</label>
+                        <input type="text" class="form-control" id="ranks" placeholder="Rank" required>
+                    </div>
+                    <div class="col-md-3 md-3">
+                        <label for="Nnames">ชื่อ</label>
+                        <input type="text" class="form-control" id="Nnames" placeholder="Name" required>
+                    </div>
+                    <div class="col-md-3 md-3">
+                        <label for="Nlasts">ชื่อสกุล</label>
+                        <input type="text" class="form-control" id="Nlasts" placeholder="Last name" required>
+                    </div>
+                    <div class="col-md-2 md-3">
+                        <label for="codes">รหัส</label>
+                        <input type="number" class="form-control" id="codes" placeholder="Code" required>
+                    </div>
+                </div>
+
+                <hr class="mb-4">
+                <button class="btn btn-primary btn-lg btn-block" type="submit">confirm</button>
+            </form>
+        </div>
+    </div>
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; cs313@604101352</p>
+    </footer>
+    </div>
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+        </script>
+    <script src="https://kit.fontawesome.com/3efdc6fb65.js" crossorigin="anonymous"></script>
+
+</html>
